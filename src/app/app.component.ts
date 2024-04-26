@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { FormGroup, FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DatePipe, JsonPipe } from '@angular/common';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatFormFieldControl, MatFormFieldModule } from '@angular/material/form-field';
 import { provideNativeDateAdapter } from '@angular/material/core';
 import { RouterOutlet } from '@angular/router';
+import {MatInputModule} from '@angular/material/input';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ import { RouterOutlet } from '@angular/router';
     RouterOutlet,
     MatFormFieldModule,
     MatDatepickerModule,
+    MatInputModule,
     FormsModule,
     ReactiveFormsModule,
     JsonPipe,
